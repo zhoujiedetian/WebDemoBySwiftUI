@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct WBPostListView: View {
-    init() {
-//        UITableView.appearance().separatorStyle = .none
-        UITableViewCell.appearance().selectionStyle = .none
+    
+    var category: PostListCategory = .recommand
+    
+    var postList: PostList {
+        switch category {
+        case .recommand:
+            return loadPostList("PostListData_recommend_1.json")
+        case .hot:
+            return loadPostList("PostListData_hot_1.json")
+        }
     }
+    
+    
     
     var body: some View {
         List {
