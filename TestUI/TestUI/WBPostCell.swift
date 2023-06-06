@@ -9,8 +9,16 @@ import SwiftUI
 
 struct WBPostCell: View {
     let post: Post
+    
+    var bindingPost: Post {
+        userData.post(forId: post.id)!
+    }
+    
+    @EnvironmentObject var userData: WBUserData
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 10){
+        var post = bindingPost
+        return VStack(alignment: .leading, spacing: 10){
             HStack(spacing: 5) {
                 post.avatarImage
                     .resizable()
@@ -34,7 +42,8 @@ struct WBPostCell: View {
                 if !post.isFollowed {
                     Spacer()
                     Button {
-                        print("点击了关注")
+                        post.isFollowed = true
+                        self.userData.update(post)
                     } label: {
                         Text("关注")
                             .font(.system(size: 14))
@@ -62,8 +71,15 @@ struct WBPostCell: View {
                     print("点击了评论")
                 }
                 Spacer()
-                WBPostCellToolBarButton(image: "heart", text: post.likeCountText, color: .black) {
-                    print("点击了点赞")
+                WBPostCellToolBarButton(image: post.isLiked ? "heart.fill":"heart", text: post.likeCountText, color: post.isLiked ?.red:.black) {
+                    if post.isLiked {
+                        post.isLiked = false
+                        post.likeCount -= 1
+                    }else {
+                        post.isLiked = true
+                        post.likeCount += 1
+                    }
+                    self.userData.update(post)
                 }
                 Spacer()
             }
@@ -80,7 +96,8 @@ struct WBPostCell: View {
 
 struct WBPostCell_Previews: PreviewProvider {
     static var previews: some View {
+        let userData = WBUserData()
         WBPostCell(post:
-                    postList.list[0])
+                    userData.recommandPostList.list[0]).environmentObject(userData)
     }
 }

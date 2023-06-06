@@ -13,7 +13,6 @@
 		4A5EEEE22A2DDDDD000F6B77 /* WBHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EEEE12A2DDDDD000F6B77 /* WBHomeView.swift */; };
 		4A5EEEE42A2DE111000F6B77 /* WBUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EEEE32A2DE111000F6B77 /* WBUserData.swift */; };
 		4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6070582A25901F00C5DF0E /* TestUIApp.swift */; };
-		4A60705B2A25901F00C5DF0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60705A2A25901F00C5DF0E /* ContentView.swift */; };
 		4A60705D2A25903700C5DF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A60705C2A25903700C5DF0E /* Assets.xcassets */; };
 		4A6070602A25903700C5DF0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A60705F2A25903700C5DF0E /* Preview Assets.xcassets */; };
 		4A60706A2A25903700C5DF0E /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6070692A25903700C5DF0E /* TestUITests.swift */; };
@@ -134,7 +133,6 @@
 		4A5EEEE32A2DE111000F6B77 /* WBUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUserData.swift; sourceTree = "<group>"; };
 		4A6070552A25901F00C5DF0E /* TestUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6070582A25901F00C5DF0E /* TestUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIApp.swift; sourceTree = "<group>"; };
-		4A60705A2A25901F00C5DF0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A60705C2A25903700C5DF0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A60705F2A25903700C5DF0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A6070652A25903700C5DF0E /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				4A6070582A25901F00C5DF0E /* TestUIApp.swift */,
-				4A60705A2A25901F00C5DF0E /* ContentView.swift */,
 				4A60713C2A273A5A00C5DF0E /* WBPostListView.swift */,
 				4A60708D2A26F06300C5DF0E /* WBPostCell.swift */,
 				4A0E14B32A286DCE00C9C156 /* WBPostImageCell.swift */,
@@ -631,7 +628,6 @@
 				4A6071372A27287E00C5DF0E /* WBPostVipBadge.swift in Sources */,
 				4A1D19312A2D888A00EB6972 /* WBPostDetailView.swift in Sources */,
 				4A0E14B42A286DCE00C9C156 /* WBPostImageCell.swift in Sources */,
-				4A60705B2A25901F00C5DF0E /* ContentView.swift in Sources */,
 				4A6071392A272A5C00C5DF0E /* WBPostModel.swift in Sources */,
 				4A60708E2A26F06300C5DF0E /* WBPostCell.swift in Sources */,
 				4A5EEEE22A2DDDDD000F6B77 /* WBHomeView.swift in Sources */,

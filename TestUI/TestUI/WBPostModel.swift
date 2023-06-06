@@ -43,8 +43,6 @@ extension Post {
     }
 }
 
-let postList = loadPostList("PostListData_recommend_1.json")
-
 func loadPostList(_ filePath: String) -> PostList {
     guard let url = Bundle.main.url(forResource: filePath, withExtension: nil) else {
         fatalError("无法获取本地Json")

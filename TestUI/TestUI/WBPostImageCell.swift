@@ -61,10 +61,11 @@ struct WBPostImageCellRow: View {
 
 struct WBPostImageCell_Previews: PreviewProvider {
     static var previews: some View {
-        let images = postList.list[0].images
+        let userData = WBUserData()
+        let images = userData.recommandPostList.list[0].images
         let width = UIScreen.main.bounds.width
         return Group {
-            WBPostImageCell(images: Array(images[0...0]), width: width)
+            WBPostImageCell(images: Array(images[0...0]), width: width).environmentObject(userData)
         }
         .previewLayout(.fixed(width: width, height: 300))
     }

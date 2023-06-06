@@ -11,20 +11,11 @@ struct WBPostListView: View {
     
     var category: PostListCategory = .recommand
     
-    var postList: PostList {
-        switch category {
-        case .recommand:
-            return loadPostList("PostListData_recommend_1.json")
-        case .hot:
-            return loadPostList("PostListData_hot_1.json")
-        }
-    }
-    
-    
+    @EnvironmentObject var userData: WBUserData
     
     var body: some View {
         List {
-            ForEach(postList.list) { post in
+            ForEach(userData.postList(for: category).list) { post in
                 
                 ZStack {
                     WBPostCell(post: post)
@@ -42,7 +33,8 @@ struct WBPostListView: View {
 struct WBPostListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            WBPostListView()
+            let userData = WBUserData()
+            WBPostListView().environmentObject(userData)
                 .navigationTitle("微博")
                 .navigationBarTitleDisplayMode(.inline)
         }

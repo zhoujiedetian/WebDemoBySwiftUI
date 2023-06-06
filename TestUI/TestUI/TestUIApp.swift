@@ -11,7 +11,7 @@ import SwiftUI
 struct TestUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WBHomeView().environmentObject(WBUserData())
         }
     }
 }

@@ -21,6 +21,7 @@ struct WBPostDetailView: View {
 
 struct WBPostDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WBPostDetailView(post: postList.list[0])
+        let userData = WBUserData()
+        WBPostDetailView(post: userData.recommandPostList.list[0]).environmentObject(userData)
     }
 }
