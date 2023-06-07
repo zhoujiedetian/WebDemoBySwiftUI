@@ -12,7 +12,7 @@ private let kButtonHeight: CGFloat = 24
 private let kStackWidth: CGFloat = UIScreen.main.bounds.size.width * 0.5
 struct WBNavigationBar: View {
     
-    @State var isLeft: CGFloat = 1 // 0在左边, 1在右边
+    @Binding var isLeft: CGFloat // 0在左边, 1在右边
     
     var body: some View {
         HStack(alignment: .top, spacing: 0) {
@@ -88,6 +88,6 @@ struct WBNavigationBar: View {
 
 struct WBNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        WBNavigationBar()
+        WBNavigationBar(isLeft: .constant(0))
     }
 }

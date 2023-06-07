@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WBHomeView: View {
+    
+    @State var isLeft: CGFloat = 0
+    
     init() {
 //        UITableView.appearance().separatorStyle = .none
         UITableViewCell.appearance().selectionStyle = .none
@@ -15,16 +18,19 @@ struct WBHomeView: View {
     
     var body: some View {
         NavigationView() {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 0) {
-                    WBPostListView(category: .recommand)
-                        .frame(width: UIScreen.main.bounds.size.width)
-                    WBPostListView(category: .hot)
-                        .frame(width: UIScreen.main.bounds.size.width)
+            GeometryReader {
+                gr in
+                WBScrollViewController(pageWidth: gr.size.width, contentSize: CGSize(width: gr.size.width * 2, height: gr.size.height), isLeft: self.$isLeft) {
+                    HStack(spacing: 0) {
+                        WBPostListView(category: .recommand)
+                            .frame(width: UIScreen.main.bounds.size.width)
+                        WBPostListView(category: .hot)
+                            .frame(width: UIScreen.main.bounds.size.width)
+                    }
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
-            .navigationBarItems(leading: WBNavigationBar(isLeft: 0))
+            .navigationBarItems(leading: WBNavigationBar(isLeft: $isLeft))
         }
     }
 }

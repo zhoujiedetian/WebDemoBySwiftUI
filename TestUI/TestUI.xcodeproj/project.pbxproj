@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A0E14B42A286DCE00C9C156 /* WBPostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E14B32A286DCE00C9C156 /* WBPostImageCell.swift */; };
 		4A1D19312A2D888A00EB6972 /* WBPostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D19302A2D888900EB6972 /* WBPostDetailView.swift */; };
+		4A3AAC842A2F0CAB007764C0 /* WBScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AAC832A2F0CAB007764C0 /* WBScrollViewController.swift */; };
 		4A5EEEE02A2DC5C9000F6B77 /* WBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EEEDF2A2DC5C9000F6B77 /* WBNavigationBar.swift */; };
 		4A5EEEE22A2DDDDD000F6B77 /* WBHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EEEE12A2DDDDD000F6B77 /* WBHomeView.swift */; };
 		4A5EEEE42A2DE111000F6B77 /* WBUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EEEE32A2DE111000F6B77 /* WBUserData.swift */; };
@@ -128,6 +129,7 @@
 /* Begin PBXFileReference section */
 		4A0E14B32A286DCE00C9C156 /* WBPostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBPostImageCell.swift; sourceTree = "<group>"; };
 		4A1D19302A2D888900EB6972 /* WBPostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBPostDetailView.swift; sourceTree = "<group>"; };
+		4A3AAC832A2F0CAB007764C0 /* WBScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBScrollViewController.swift; sourceTree = "<group>"; };
 		4A5EEEDF2A2DC5C9000F6B77 /* WBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBNavigationBar.swift; sourceTree = "<group>"; };
 		4A5EEEE12A2DDDDD000F6B77 /* WBHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHomeView.swift; sourceTree = "<group>"; };
 		4A5EEEE32A2DE111000F6B77 /* WBUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUserData.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				4A5EEEDF2A2DC5C9000F6B77 /* WBNavigationBar.swift */,
 				4A5EEEE12A2DDDDD000F6B77 /* WBHomeView.swift */,
 				4A5EEEE32A2DE111000F6B77 /* WBUserData.swift */,
+				4A3AAC832A2F0CAB007764C0 /* WBScrollViewController.swift */,
 				4A60708F2A26F51500C5DF0E /* Resources */,
 				4A60705C2A25903700C5DF0E /* Assets.xcassets */,
 				4A60705E2A25903700C5DF0E /* Preview Content */,
@@ -635,6 +638,7 @@
 				4A5EEEE42A2DE111000F6B77 /* WBUserData.swift in Sources */,
 				4A5EEEE02A2DC5C9000F6B77 /* WBNavigationBar.swift in Sources */,
 				4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */,
+				4A3AAC842A2F0CAB007764C0 /* WBScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
