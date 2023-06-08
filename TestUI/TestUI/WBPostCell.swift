@@ -10,6 +10,8 @@ import SwiftUI
 struct WBPostCell: View {
     let post: Post
     
+    @State var isPresentcomment: Bool = false
+    
     var bindingPost: Post {
         userData.post(forId: post.id)!
     }
@@ -69,6 +71,10 @@ struct WBPostCell: View {
                 Spacer()
                 WBPostCellToolBarButton(image: "message", text: post.commentCountText, color: .black) {
                     print("点击了评论")
+                    self.isPresentcomment = true
+                }
+                .sheet(isPresented: $isPresentcomment) {
+                    WBCommentInputView(post: post)
                 }
                 Spacer()
                 WBPostCellToolBarButton(image: post.isLiked ? "heart.fill":"heart", text: post.likeCountText, color: post.isLiked ?.red:.black) {
@@ -98,6 +104,6 @@ struct WBPostCell_Previews: PreviewProvider {
     static var previews: some View {
         let userData = WBUserData()
         WBPostCell(post:
-                    userData.recommandPostList.list[0]).environmentObject(userData)
+                    userData.recommandPostList.list[2]).environmentObject(userData)
     }
 }

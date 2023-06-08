@@ -11,7 +11,8 @@ import SwiftUI
 struct TestUIApp: App {
     var body: some Scene {
         WindowGroup {
-            WBHomeView().environmentObject(WBUserData())
+//            WBHomeView().environmentObject(WBUserData())
+            ImageEntry()
         }
     }
 }
