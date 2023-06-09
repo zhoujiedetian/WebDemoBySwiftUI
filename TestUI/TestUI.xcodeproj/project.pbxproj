@@ -117,6 +117,7 @@
 		4A6071392A272A5C00C5DF0E /* WBPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6071382A272A5C00C5DF0E /* WBPostModel.swift */; };
 		4A60713B2A2735C400C5DF0E /* WBPostCellToolBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60713A2A2735C400C5DF0E /* WBPostCellToolBarButton.swift */; };
 		4A60713D2A273A5A00C5DF0E /* WBPostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60713C2A273A5A00C5DF0E /* WBPostListView.swift */; };
+		4AB621EF2A32F8A0000F0CDB /* STPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB621EE2A32F8A0000F0CDB /* STPriceView.swift */; };
 		78D2E856495141DCEF3F0AC2 /* Pods_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC137B8C20373C5644A1D5F4 /* Pods_TestUITests.framework */; };
 		937A466CD4FA7EC343741C89 /* Pods_TestUI_TestUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53836DC28160FFD5703CF3C /* Pods_TestUI_TestUIUITests.framework */; };
 		F90C39E9027E0BB7047B031F /* Pods_TestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC699D36BABC8196A10D849 /* Pods_TestUI.framework */; };
@@ -253,6 +254,7 @@
 		4A6071382A272A5C00C5DF0E /* WBPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBPostModel.swift; sourceTree = "<group>"; };
 		4A60713A2A2735C400C5DF0E /* WBPostCellToolBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBPostCellToolBarButton.swift; sourceTree = "<group>"; };
 		4A60713C2A273A5A00C5DF0E /* WBPostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBPostListView.swift; sourceTree = "<group>"; };
+		4AB621EE2A32F8A0000F0CDB /* STPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPriceView.swift; sourceTree = "<group>"; };
 		7AD133FC80B80AA9248E2FA9 /* Pods-TestUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.debug.xcconfig"; path = "Target Support Files/Pods-TestUI/Pods-TestUI.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCCB5AA888566E3C833F291 /* Pods-TestUI-TestUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI-TestUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestUI-TestUIUITests/Pods-TestUI-TestUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB84A46795811832A674E90 /* Pods-TestUI-TestUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI-TestUIUITests.release.xcconfig"; path = "Target Support Files/Pods-TestUI-TestUIUITests/Pods-TestUI-TestUIUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -295,11 +297,10 @@
 		4A3AAC952A31C02B007764C0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				4A3AAC8F2A31A920007764C0 /* TestView.swift */,
 				4A3AAC912A31C004007764C0 /* SimpleExample.swift */,
 				4A3AAC932A31C016007764C0 /* WebImageExample.swift */,
 				4A3AAC962A31C043007764C0 /* ImageEntry.swift */,
-				4A3AAC9B2A31CF77007764C0 /* ZHVStackView.swift */,
+				4AB621ED2A32F882000F0CDB /* StackDemo */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -345,6 +346,7 @@
 				4A3AAC872A302CCE007764C0 /* WBCommentTextView.swift */,
 				4A3AAC8B2A30613D007764C0 /* WBKeyBoardResponder.swift */,
 				4A3AAC8D2A318274007764C0 /* WBNetworkManager.swift */,
+				4A3AAC8F2A31A920007764C0 /* TestView.swift */,
 				4A3AAC952A31C02B007764C0 /* Other */,
 				4A60708F2A26F51500C5DF0E /* Resources */,
 				4A60705C2A25903700C5DF0E /* Assets.xcassets */,
@@ -466,6 +468,15 @@
 				4A6070E22A26F51600C5DF0E /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AB621ED2A32F882000F0CDB /* StackDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4A3AAC9B2A31CF77007764C0 /* ZHVStackView.swift */,
+				4AB621EE2A32F8A0000F0CDB /* STPriceView.swift */,
+			);
+			path = StackDemo;
 			sourceTree = "<group>";
 		};
 		9A12B7413B1255D2C5BAF9D5 /* Pods */ = {
@@ -839,6 +850,7 @@
 				4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */,
 				4A3AAC842A2F0CAB007764C0 /* WBScrollViewController.swift in Sources */,
 				4A3AAC8E2A318274007764C0 /* WBNetworkManager.swift in Sources */,
+				4AB621EF2A32F8A0000F0CDB /* STPriceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
