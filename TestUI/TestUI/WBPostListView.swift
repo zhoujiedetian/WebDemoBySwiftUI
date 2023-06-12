@@ -16,11 +16,10 @@ struct WBPostListView: View {
     var body: some View {
         List {
             ForEach(userData.postList(for: category).list) { post in
-                
                 ZStack {
                     WBPostCell(post: post)
                     NavigationLink(destination: WBPostDetailView(post: post)) {
-                        EmptyView()
+//                        EmptyView()
                     }
 //                    .hidden()
                 }

@@ -37,6 +37,7 @@ struct WBHomeView: View {
 
 struct WBHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WBHomeView()
+        let userData = WBUserData()
+        WBHomeView().environmentObject(userData)
     }
 }
