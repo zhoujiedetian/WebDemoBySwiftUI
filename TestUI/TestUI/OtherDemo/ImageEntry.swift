@@ -18,11 +18,11 @@ struct ImageEntry: View {
                 } label: {
                     Text("SimpleExample")
                 }
-                NavigationLink {
-                    WebImageExample(url: url)
-                } label: {
-                    Text("WebImageExample")
-                }
+//                NavigationLink {
+//                    WebImageExample(url: url)
+//                } label: {
+//                    Text("WebImageExample")
+//                }
             }
         }
     }
