@@ -11,9 +11,12 @@ import Kingfisher
 struct WebImageExample: View {
     let url: URL?
     var body: some View {
-        let image = UIImage(named: "")!
+//        let image = UIImage(named: "")!
         KFImage.url(url)
-            .placeholder({ Image(uiImage: image) })
+            .placeholder({ Color.gray })
+            .onSuccess({ result in
+                
+            })
             .resizable()
             .scaledToFit()
             .clipped()

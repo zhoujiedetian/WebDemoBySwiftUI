@@ -12,7 +12,7 @@ struct WBHomeView: View {
     @State var isLeft: CGFloat = 0
     
     init() {
-//        UITableView.appearance().separatorStyle = .none
+        //        UITableView.appearance().separatorStyle = .none
         UITableViewCell.appearance().selectionStyle = .none
     }
     
@@ -37,7 +37,6 @@ struct WBHomeView: View {
 
 struct WBHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        let userData = WBUserData()
-        WBHomeView().environmentObject(userData)
+        WBHomeView().environmentObject(WBUserData())
     }
 }

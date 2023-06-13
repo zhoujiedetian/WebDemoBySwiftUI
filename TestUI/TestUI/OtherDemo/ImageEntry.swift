@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private let url = URL(string: "https://github.com/xiaoyouxinqing/PostDemo/blob/392dc6e0c7b5d54a7432bf49e9458c58fbc9f547/PostDemo/Resources/8a0b5544jw1e8qgp5bmzyj2050050aa8.jpg")!
+private let url = URL(string: "https://s1.ax1x.com/2023/06/12/pCZDUkF.jpg")!
 
 struct ImageEntry: View {
     var body: some View {
