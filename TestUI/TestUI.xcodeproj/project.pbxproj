@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1477A62A3B06B000B35073 /* TopBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1477A52A3B06B000B35073 /* TopBarMenu.swift */; };
+		4A1477A82A3B06CC00B35073 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1477A72A3B06CC00B35073 /* SwipeCardView.swift */; };
+		4A1477AA2A3B06E400B35073 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1477A92A3B06E400B35073 /* BottomBarView.swift */; };
+		4A1477AC2A3B070F00B35073 /* SwipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1477AB2A3B070F00B35073 /* SwipeData.swift */; };
 		4A3AAC922A31C004007764C0 /* SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AAC912A31C004007764C0 /* SimpleExample.swift */; };
 		4A3AAC942A31C016007764C0 /* WebImageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AAC932A31C016007764C0 /* WebImageExample.swift */; };
 		4A3AAC972A31C043007764C0 /* ImageEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AAC962A31C043007764C0 /* ImageEntry.swift */; };
@@ -125,6 +129,13 @@
 		4AE3BFEC2A38557E00DC9E90 /* WBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3BFDC2A38557E00DC9E90 /* WBNavigationBar.swift */; };
 		4AE3BFEF2A38590700DC9E90 /* ModalViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3BFEE2A38590700DC9E90 /* ModalViewDemo.swift */; };
 		4AE3BFF12A385BC000DC9E90 /* ModalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3BFF02A385BC000DC9E90 /* ModalDetailView.swift */; };
+		4AE3BFF42A3997EA00DC9E90 /* GestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3BFF32A3997EA00DC9E90 /* GestureDemo.swift */; };
+		4AE3BFF72A39B59300DC9E90 /* SwipeCardDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3BFF62A39B59300DC9E90 /* SwipeCardDemo.swift */; };
+		4AE3BFFE2A39B60000DC9E90 /* IMG_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE3BFF92A39B5FF00DC9E90 /* IMG_4.png */; };
+		4AE3BFFF2A39B60000DC9E90 /* IMG_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE3BFFA2A39B60000DC9E90 /* IMG_3.png */; };
+		4AE3C0002A39B60000DC9E90 /* IMG_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE3BFFB2A39B60000DC9E90 /* IMG_5.png */; };
+		4AE3C0012A39B60000DC9E90 /* IMG_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE3BFFC2A39B60000DC9E90 /* IMG_2.png */; };
+		4AE3C0022A39B60000DC9E90 /* IMG_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE3BFFD2A39B60000DC9E90 /* IMG_1.png */; };
 		78D2E856495141DCEF3F0AC2 /* Pods_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC137B8C20373C5644A1D5F4 /* Pods_TestUITests.framework */; };
 		937A466CD4FA7EC343741C89 /* Pods_TestUI_TestUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53836DC28160FFD5703CF3C /* Pods_TestUI_TestUIUITests.framework */; };
 		E275EBDF2A3763A0005A9E9C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275EBD32A37639F005A9E9C /* DetailView.swift */; };
@@ -158,6 +169,10 @@
 
 /* Begin PBXFileReference section */
 		158146D70413FC6F54C8C37A /* Pods-TestUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.release.xcconfig"; path = "Target Support Files/Pods-TestUI/Pods-TestUI.release.xcconfig"; sourceTree = "<group>"; };
+		4A1477A52A3B06B000B35073 /* TopBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarMenu.swift; sourceTree = "<group>"; };
+		4A1477A72A3B06CC00B35073 /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		4A1477A92A3B06E400B35073 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		4A1477AB2A3B070F00B35073 /* SwipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeData.swift; sourceTree = "<group>"; };
 		4A3AAC912A31C004007764C0 /* SimpleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleExample.swift; sourceTree = "<group>"; };
 		4A3AAC932A31C016007764C0 /* WebImageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageExample.swift; sourceTree = "<group>"; };
 		4A3AAC962A31C043007764C0 /* ImageEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEntry.swift; sourceTree = "<group>"; };
@@ -279,6 +294,13 @@
 		4AE3BFDC2A38557E00DC9E90 /* WBNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationBar.swift; sourceTree = "<group>"; };
 		4AE3BFEE2A38590700DC9E90 /* ModalViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewDemo.swift; sourceTree = "<group>"; };
 		4AE3BFF02A385BC000DC9E90 /* ModalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailView.swift; sourceTree = "<group>"; };
+		4AE3BFF32A3997EA00DC9E90 /* GestureDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDemo.swift; sourceTree = "<group>"; };
+		4AE3BFF62A39B59300DC9E90 /* SwipeCardDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardDemo.swift; sourceTree = "<group>"; };
+		4AE3BFF92A39B5FF00DC9E90 /* IMG_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4.png; sourceTree = "<group>"; };
+		4AE3BFFA2A39B60000DC9E90 /* IMG_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_3.png; sourceTree = "<group>"; };
+		4AE3BFFB2A39B60000DC9E90 /* IMG_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5.png; sourceTree = "<group>"; };
+		4AE3BFFC2A39B60000DC9E90 /* IMG_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2.png; sourceTree = "<group>"; };
+		4AE3BFFD2A39B60000DC9E90 /* IMG_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1.png; sourceTree = "<group>"; };
 		7AD133FC80B80AA9248E2FA9 /* Pods-TestUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.debug.xcconfig"; path = "Target Support Files/Pods-TestUI/Pods-TestUI.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCCB5AA888566E3C833F291 /* Pods-TestUI-TestUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI-TestUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestUI-TestUIUITests/Pods-TestUI-TestUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB84A46795811832A674E90 /* Pods-TestUI-TestUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI-TestUIUITests.release.xcconfig"; path = "Target Support Files/Pods-TestUI-TestUIUITests/Pods-TestUI-TestUIUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +354,8 @@
 				4A3AAC912A31C004007764C0 /* SimpleExample.swift */,
 				4A3AAC932A31C016007764C0 /* WebImageExample.swift */,
 				4A3AAC962A31C043007764C0 /* ImageEntry.swift */,
+				4AE3BFF52A39B3E900DC9E90 /* SwipeCardDemo */,
+				4AE3BFF22A39979B00DC9E90 /* GestureDemo */,
 				E275EBE82A389AC0005A9E9C /* FormDemo */,
 				4AE3BFED2A3858D800DC9E90 /* ModalViewDemo */,
 				E275EBD22A37639F005A9E9C /* NavigationVIewDemo */,
@@ -563,6 +587,39 @@
 			path = ModalViewDemo;
 			sourceTree = "<group>";
 		};
+		4AE3BFF22A39979B00DC9E90 /* GestureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3BFF32A3997EA00DC9E90 /* GestureDemo.swift */,
+			);
+			path = GestureDemo;
+			sourceTree = "<group>";
+		};
+		4AE3BFF52A39B3E900DC9E90 /* SwipeCardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3BFF62A39B59300DC9E90 /* SwipeCardDemo.swift */,
+				4A1477A52A3B06B000B35073 /* TopBarMenu.swift */,
+				4A1477A72A3B06CC00B35073 /* SwipeCardView.swift */,
+				4A1477A92A3B06E400B35073 /* BottomBarView.swift */,
+				4A1477AB2A3B070F00B35073 /* SwipeData.swift */,
+				4AE3BFF82A39B5F500DC9E90 /* Resource */,
+			);
+			path = SwipeCardDemo;
+			sourceTree = "<group>";
+		};
+		4AE3BFF82A39B5F500DC9E90 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3BFFD2A39B60000DC9E90 /* IMG_1.png */,
+				4AE3BFFC2A39B60000DC9E90 /* IMG_2.png */,
+				4AE3BFFA2A39B60000DC9E90 /* IMG_3.png */,
+				4AE3BFF92A39B5FF00DC9E90 /* IMG_4.png */,
+				4AE3BFFB2A39B60000DC9E90 /* IMG_5.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		9A12B7413B1255D2C5BAF9D5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +798,7 @@
 				4A6070E42A26F51600C5DF0E /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg in Resources */,
 				4A6070F72A26F51600C5DF0E /* 8a0b5544gy1gauy2ex786j20u0129aed.jpg in Resources */,
 				4A6071112A26F51600C5DF0E /* d0c21786ly1gavj2cdrkyj20c80720tg.jpg in Resources */,
+				4AE3C0002A39B60000DC9E90 /* IMG_5.png in Resources */,
 				4A6071252A26F51600C5DF0E /* 76297935ly1gatz8g5rvxj22c03401kz.jpg in Resources */,
 				4A6071312A26F51600C5DF0E /* 6ec3b446gy1gavd4xud8lj20j60qkwj0.jpg in Resources */,
 				4AB621FC2A370DDC000F0CDB /* QQ.png in Resources */,
@@ -752,6 +810,7 @@
 				4A6070E92A26F51600C5DF0E /* eb5c94aegy1gav25n5ibjj20zk1h8wuu.jpg in Resources */,
 				4A6071022A26F51600C5DF0E /* 006gWxMEly1gavap8vsqaj30hs0bwgm6.jpg in Resources */,
 				4AB621FF2A3713FF000F0CDB /* pingguo.png in Resources */,
+				4AE3BFFF2A39B60000DC9E90 /* IMG_3.png in Resources */,
 				4A6070ED2A26F51600C5DF0E /* 8a0b5544gy1gauy2flua6j20u00hitab.jpg in Resources */,
 				4A6071052A26F51600C5DF0E /* 8a0b5544gy1gauy2g35yoj20u00fomzf.jpg in Resources */,
 				4A6071342A26F51600C5DF0E /* 6ec3b446gy1gavd523embj20j60pytd6.jpg in Resources */,
@@ -794,18 +853,21 @@
 				4A6071182A26F51600C5DF0E /* 6a2afec3jw8fb4ld0qf2gj20e80dsdfz.jpg in Resources */,
 				4A6071092A26F51600C5DF0E /* c5aa834fgy1gauzr6venkj20u01hc12f.jpg in Resources */,
 				4A6071152A26F51600C5DF0E /* 006PdkDogy1gap6ngj12ej30u011itf7.jpg in Resources */,
+				4AE3BFFE2A39B60000DC9E90 /* IMG_4.png in Resources */,
 				4A60710B2A26F51600C5DF0E /* 630584a6gy1gau54zm4dtj20m80dftbv.jpg in Resources */,
 				4A6070EC2A26F51600C5DF0E /* 9dc7402fgy1gavd38wwlrj20j60nyq6y.jpg in Resources */,
 				4A6070F52A26F51600C5DF0E /* c5aa834fgy1gauzrb7s5ej20tz13qh5x.jpg in Resources */,
 				4A60711F2A26F51600C5DF0E /* eb5c94aely8fmvumnl9baj20v90v9q49.jpg in Resources */,
 				4A6070FF2A26F51600C5DF0E /* 4e7f0c83gy1gam2ml6nucj22tc240kjl.jpg in Resources */,
 				4A6070EB2A26F51600C5DF0E /* 630584a6gy1gau54zl806j20m80etmzo.jpg in Resources */,
+				4AE3C0022A39B60000DC9E90 /* IMG_1.png in Resources */,
 				4A6070EA2A26F51600C5DF0E /* 006gWxMEly1gavap8dywoj30hs0bwq48.jpg in Resources */,
 				4A6071332A26F51600C5DF0E /* bca7fdafly1gax1gqdhouj20c80axaam.jpg in Resources */,
 				4A6070F82A26F51600C5DF0E /* 76297935ly1gatz89dzblj23402c0qv6.jpg in Resources */,
 				4A6070F62A26F51600C5DF0E /* 700a34f6gy1gaunswxtlrj20j60pkgok.jpg in Resources */,
 				4A6071062A26F51600C5DF0E /* 006PdkDoly8ffywe2fq39j304g04gwed.jpg in Resources */,
 				4A6071122A26F51600C5DF0E /* bca7fdafly1gax1gqehdaj20c80atq3x.jpg in Resources */,
+				4AE3C0012A39B60000DC9E90 /* IMG_2.png in Resources */,
 				4A60705D2A25903700C5DF0E /* Assets.xcassets in Resources */,
 				4A6071162A26F51600C5DF0E /* 700a34f6gy1gaunsx2jywj20j60pkaeu.jpg in Resources */,
 				4A6071272A26F51600C5DF0E /* eb5c94aegy1gav2509cp5j20zk0k0n2j.jpg in Resources */,
@@ -953,13 +1015,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE3BFE42A38557E00DC9E90 /* WBKeyBoardResponder.swift in Sources */,
+				4AE3BFF72A39B59300DC9E90 /* SwipeCardDemo.swift in Sources */,
 				4AE3BFE52A38557E00DC9E90 /* WBNetworkManager.swift in Sources */,
+				4A1477AA2A3B06E400B35073 /* BottomBarView.swift in Sources */,
 				E2D39FE72A38A0A7006A1724 /* UpdateViewDemo.swift in Sources */,
 				4AE3BFDD2A38557E00DC9E90 /* WBCommentInputView.swift in Sources */,
 				4AE3BFE82A38557E00DC9E90 /* WBPostCellToolBarButton.swift in Sources */,
 				4AB621F32A36C862000F0CDB /* ScrollViewDemo.swift in Sources */,
 				4AE3BFE62A38557E00DC9E90 /* WBPostCell.swift in Sources */,
 				4A3AAC942A31C016007764C0 /* WebImageExample.swift in Sources */,
+				4AE3BFF42A3997EA00DC9E90 /* GestureDemo.swift in Sources */,
 				4A3AAC922A31C004007764C0 /* SimpleExample.swift in Sources */,
 				E275EBE22A3763A0005A9E9C /* ListDemo.swift in Sources */,
 				4AE3BFEC2A38557E00DC9E90 /* WBNavigationBar.swift in Sources */,
@@ -974,10 +1039,13 @@
 				E275EBE02A3763A0005A9E9C /* NavigationDemo.swift in Sources */,
 				4AE3BFE22A38557E00DC9E90 /* WBPostListView.swift in Sources */,
 				E2D39FEB2A38A7E6006A1724 /* StepperViewDemo.swift in Sources */,
+				4A1477A62A3B06B000B35073 /* TopBarMenu.swift in Sources */,
 				4AB621F62A3705A8000F0CDB /* ButtonDemo.swift in Sources */,
 				4AE3BFDF2A38557E00DC9E90 /* WBPostModel.swift in Sources */,
 				E2D39FED2A38A9AE006A1724 /* ListUpgradeDemo.swift in Sources */,
+				4A1477AC2A3B070F00B35073 /* SwipeData.swift in Sources */,
 				4AB621EF2A32F8A0000F0CDB /* STPriceView.swift in Sources */,
+				4A1477A82A3B06CC00B35073 /* SwipeCardView.swift in Sources */,
 				4AE3BFDE2A38557E00DC9E90 /* WBScrollViewController.swift in Sources */,
 				4AE3BFE32A38557E00DC9E90 /* TestView.swift in Sources */,
 				4AE3BFEB2A38557E00DC9E90 /* WBPostDetailView.swift in Sources */,
