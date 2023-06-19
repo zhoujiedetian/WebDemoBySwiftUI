@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct TestUIApp: App {
+    let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
 //            WBHomeView().environmentObject(WBUserData())
-            ListUpgradeDemo()
+            CoreDataDemo()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
