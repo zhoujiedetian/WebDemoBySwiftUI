@@ -147,6 +147,8 @@
 		E275EBE22A3763A0005A9E9C /* ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275EBD72A37639F005A9E9C /* ListDemo.swift */; };
 		E275EBE72A3763A0005A9E9C /* PathDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275EBDE2A37639F005A9E9C /* PathDemo.swift */; };
 		E275EBEA2A389AD4005A9E9C /* GeneralViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275EBE92A389AD4005A9E9C /* GeneralViewDemo.swift */; };
+		E28A255A2A40909B00BDCB3A /* BannerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A25592A40909B00BDCB3A /* BannerDemo.swift */; };
+		E28A255C2A40A1C600BDCB3A /* BannerDetailDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A255B2A40A1C600BDCB3A /* BannerDetailDemo.swift */; };
 		E2D39FE72A38A0A7006A1724 /* UpdateViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D39FE62A38A0A7006A1724 /* UpdateViewDemo.swift */; };
 		E2D39FEB2A38A7E6006A1724 /* StepperViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D39FEA2A38A7E6006A1724 /* StepperViewDemo.swift */; };
 		E2D39FED2A38A9AE006A1724 /* ListUpgradeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D39FEC2A38A9AE006A1724 /* ListUpgradeDemo.swift */; };
@@ -320,6 +322,8 @@
 		E275EBD72A37639F005A9E9C /* ListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDemo.swift; sourceTree = "<group>"; };
 		E275EBDE2A37639F005A9E9C /* PathDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathDemo.swift; sourceTree = "<group>"; };
 		E275EBE92A389AD4005A9E9C /* GeneralViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewDemo.swift; sourceTree = "<group>"; };
+		E28A25592A40909B00BDCB3A /* BannerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDemo.swift; sourceTree = "<group>"; };
+		E28A255B2A40A1C600BDCB3A /* BannerDetailDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDetailDemo.swift; sourceTree = "<group>"; };
 		E2D39FE62A38A0A7006A1724 /* UpdateViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewDemo.swift; sourceTree = "<group>"; };
 		E2D39FEA2A38A7E6006A1724 /* StepperViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewDemo.swift; sourceTree = "<group>"; };
 		E2D39FEC2A38A9AE006A1724 /* ListUpgradeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUpgradeDemo.swift; sourceTree = "<group>"; };
@@ -375,6 +379,7 @@
 		4A3AAC952A31C02B007764C0 /* OtherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E28A25582A40908800BDCB3A /* BannerDemo */,
 				4A1477F62A40035C00B35073 /* SearchBarDemo */,
 				4A1477ED2A3C03A400B35073 /* CoreDataDemo */,
 				4AE3BFF52A39B3E900DC9E90 /* SwipeCardDemo */,
@@ -703,6 +708,15 @@
 				E2D39FEA2A38A7E6006A1724 /* StepperViewDemo.swift */,
 			);
 			path = FormDemo;
+			sourceTree = "<group>";
+		};
+		E28A25582A40908800BDCB3A /* BannerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E28A25592A40909B00BDCB3A /* BannerDemo.swift */,
+				E28A255B2A40A1C600BDCB3A /* BannerDetailDemo.swift */,
+			);
+			path = BannerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1041,6 +1055,7 @@
 			files = (
 				4AE3BFE42A38557E00DC9E90 /* WBKeyBoardResponder.swift in Sources */,
 				4AE3BFF72A39B59300DC9E90 /* SwipeCardDemo.swift in Sources */,
+				E28A255A2A40909B00BDCB3A /* BannerDemo.swift in Sources */,
 				4A1477F12A3C058000B35073 /* ToDoItem.swift in Sources */,
 				4AE3BFE52A38557E00DC9E90 /* WBNetworkManager.swift in Sources */,
 				4A1477AA2A3B06E400B35073 /* BottomBarView.swift in Sources */,
@@ -1075,6 +1090,7 @@
 				4AB621EF2A32F8A0000F0CDB /* STPriceView.swift in Sources */,
 				4A1477A82A3B06CC00B35073 /* SwipeCardView.swift in Sources */,
 				4AE3BFDE2A38557E00DC9E90 /* WBScrollViewController.swift in Sources */,
+				E28A255C2A40A1C600BDCB3A /* BannerDetailDemo.swift in Sources */,
 				4AE3BFE32A38557E00DC9E90 /* TestView.swift in Sources */,
 				4AE3BFEB2A38557E00DC9E90 /* WBPostDetailView.swift in Sources */,
 				E275EBE72A3763A0005A9E9C /* PathDemo.swift in Sources */,
