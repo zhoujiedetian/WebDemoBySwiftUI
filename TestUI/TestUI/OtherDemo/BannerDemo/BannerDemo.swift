@@ -19,16 +19,23 @@ struct BannerDemo: View {
             GeometryReader { gr in
                 HStack(spacing: 0) {
                     ForEach(items.indices, id: \.self) { index in
-                        BannerCardView(item: items[index], index: index)
-                            .onTapGesture {
-                                self.isShowDetail.toggle()
-                            }
+                        GeometryReader { innerGr in
+                            BannerCardView(item: items[index], index: index)
+                                .offset(y: self.isShowDetail ? -innerGr.size.height * 0.3 : 0)
+                                .onTapGesture {
+                                    self.isShowDetail.toggle()
+                                }
+                        }
+                        .padding(.horizontal, self.isShowDetail ? 0 : 20)
+                        .opacity(self.index == index ? 1.0 : 0.7)
+                        .frame(width: gr.size.width, height: self.index == index ? (self.isShowDetail ? gr.size.height : 250) : 200)
                     }
                 }
                 .frame(width: gr.size.width, height: gr.size.height, alignment: .leading)
                 .offset(x: -CGFloat(self.index) * gr.size.width)
                 .offset(x: self.dragOffset)
                 .gesture(
+                    !self.isShowDetail ?
                     DragGesture()
                         .updating(self.$dragOffset, body: { value, state, transaction in
                             state = value.translation.width
@@ -38,7 +45,9 @@ struct BannerDemo: View {
                             var newIndex = Int(-value.translation.width/threshold)+self.index
                             newIndex = min(max(0, newIndex), SwipeData.loadData().count - 1)
                             self.index = newIndex
+                            print(self.index)
                         })
+                    : nil
                 )
             }
             .animation(.interpolatingSpring(mass: 0.6, stiffness: 100, damping: 10), value: offset)
@@ -67,8 +76,7 @@ struct BannerCardView: View {
             .resizable()
             .scaledToFill()
             .cornerRadius(15)
-            .frame(width: gr.size.width, height: self.index == index ? 250 : 200)
-            .opacity(self.index == index ? 1.0 : 0.7)
+//            .frame(width: gr.size.width, height: self.index == index ? 250 : 200)
             .clipped()
             .overlay {
                 Text(item.name)
@@ -76,7 +84,7 @@ struct BannerCardView: View {
                     .padding(10)
                     .background(.white)
                     .cornerRadius(8)
-                    .padding(.leading, 35)
+                    .padding(.leading, 15)
                     .padding(.bottom, 15) .padding([.bottom, .leading])
                     .frame(minWidth: 0, maxWidth: .infinity,minHeight: 0, maxHeight: .infinity, alignment: .bottomLeading)
             }

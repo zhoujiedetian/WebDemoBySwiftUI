@@ -16,6 +16,9 @@ struct SearchBarDemo: View {
             TextField("搜你想看的", text: $text, onEditingChanged: { isEditing in
                 print(self.text)
             })
+            .onChange(of: text, perform: { newValue in
+                print(self.text)
+            })
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
