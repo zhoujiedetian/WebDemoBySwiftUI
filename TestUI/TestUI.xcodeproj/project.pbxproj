@@ -431,6 +431,7 @@
 		4A3AAC952A31C02B007764C0 /* OtherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E28212102A488B8100A01A70 /* ScrollViewReaderDemo */,
 				4AB587AB2A48324D0071D638 /* TransitionDemo */,
 				4AB587A82A4814150071D638 /* LazyGridDemo */,
 				4A1478402A41867400B35073 /* ProgressDemo */,
@@ -783,6 +784,13 @@
 				E2D39FEA2A38A7E6006A1724 /* StepperViewDemo.swift */,
 			);
 			path = FormDemo;
+			sourceTree = "<group>";
+		};
+		E28212102A488B8100A01A70 /* ScrollViewReaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScrollViewReaderDemo;
 			sourceTree = "<group>";
 		};
 		E28A25582A40908800BDCB3A /* BannerDemo */ = {
