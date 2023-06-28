@@ -22,6 +22,9 @@
 		4A14783D2A4153A400B35073 /* RegisterDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14783C2A4153A400B35073 /* RegisterDemo.swift */; };
 		4A14783F2A417EC000B35073 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14783E2A417EC000B35073 /* RegisterViewModel.swift */; };
 		4A1478422A41868300B35073 /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1478412A41868300B35073 /* ProgressDemo.swift */; };
+		4A245DFD2A4C0E9300E4AA7E /* CardLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245DFC2A4C0E9300E4AA7E /* CardLoadingView.swift */; };
+		4A245E002A4C100300E4AA7E /* LogoViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245DFF2A4C100300E4AA7E /* LogoViewDemo.swift */; };
+		4A245E022A4C1F3C00E4AA7E /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245E012A4C1F3C00E4AA7E /* ImagePickerView.swift */; };
 		4A3AAC9C2A31CF77007764C0 /* ZHVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AAC9B2A31CF77007764C0 /* ZHVStackView.swift */; };
 		4A5F16392A47E3B200EEEB17 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F16382A47E3B200EEEB17 /* ColorExt.swift */; };
 		4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6070582A25901F00C5DF0E /* TestUIApp.swift */; };
@@ -202,6 +205,9 @@
 		4A14783C2A4153A400B35073 /* RegisterDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDemo.swift; sourceTree = "<group>"; };
 		4A14783E2A417EC000B35073 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		4A1478412A41868300B35073 /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
+		4A245DFC2A4C0E9300E4AA7E /* CardLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLoadingView.swift; sourceTree = "<group>"; };
+		4A245DFF2A4C100300E4AA7E /* LogoViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewDemo.swift; sourceTree = "<group>"; };
+		4A245E012A4C1F3C00E4AA7E /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		4A3AAC9B2A31CF77007764C0 /* ZHVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHVStackView.swift; sourceTree = "<group>"; };
 		4A5F16382A47E3B200EEEB17 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		4A6070552A25901F00C5DF0E /* TestUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -436,9 +442,19 @@
 			path = ProgressDemo;
 			sourceTree = "<group>";
 		};
+		4A245DFE2A4C0FF500E4AA7E /* LogoViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4A245DFF2A4C100300E4AA7E /* LogoViewDemo.swift */,
+				4A245E012A4C1F3C00E4AA7E /* ImagePickerView.swift */,
+			);
+			path = LogoViewDemo;
+			sourceTree = "<group>";
+		};
 		4A3AAC952A31C02B007764C0 /* OtherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4A245DFE2A4C0FF500E4AA7E /* LogoViewDemo */,
 				E28212152A49D70700A01A70 /* ColorDemo */,
 				E28212102A488B8100A01A70 /* ScrollViewReaderDemo */,
 				4AB587AB2A48324D0071D638 /* TransitionDemo */,
@@ -808,6 +824,7 @@
 			isa = PBXGroup;
 			children = (
 				E28212162A49D71700A01A70 /* ColorDemo.swift */,
+				4A245DFC2A4C0E9300E4AA7E /* CardLoadingView.swift */,
 				E28212182A49DC5B00A01A70 /* ColorModel.swift */,
 			);
 			path = ColorDemo;
@@ -1188,6 +1205,7 @@
 				4A5F16392A47E3B200EEEB17 /* ColorExt.swift in Sources */,
 				4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */,
 				4A14783D2A4153A400B35073 /* RegisterDemo.swift in Sources */,
+				4A245E022A4C1F3C00E4AA7E /* ImagePickerView.swift in Sources */,
 				E275EBE02A3763A0005A9E9C /* NavigationDemo.swift in Sources */,
 				4AE3BFE22A38557E00DC9E90 /* WBPostListView.swift in Sources */,
 				4A1477F32A3C50DE00B35073 /* NewTodoView.swift in Sources */,
@@ -1210,11 +1228,13 @@
 				4AE3BFEB2A38557E00DC9E90 /* WBPostDetailView.swift in Sources */,
 				E275EBE72A3763A0005A9E9C /* PathDemo.swift in Sources */,
 				4AE3BFE92A38557E00DC9E90 /* WBUserData.swift in Sources */,
+				4A245E002A4C100300E4AA7E /* LogoViewDemo.swift in Sources */,
 				4AE3BFEA2A38557E00DC9E90 /* WBCommentTextView.swift in Sources */,
 				4AE3BFEF2A38590700DC9E90 /* ModalViewDemo.swift in Sources */,
 				4AE3BFE12A38557E00DC9E90 /* WBHomeView.swift in Sources */,
 				4A1478422A41868300B35073 /* ProgressDemo.swift in Sources */,
 				4AE3BFE02A38557E00DC9E90 /* WBPostImageCell.swift in Sources */,
+				4A245DFD2A4C0E9300E4AA7E /* CardLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,17 @@ import SwiftUI
 struct ColorDemo: View {
     
     @State var cardItems: [CardModel] = []
+    @State var searchStr: String = ""
+    @State var showSearchBar = false
     
     var body: some View {
         VStack {
-            CardTitleView
+//            CardTitleView
+//            CardSearchBarView
+            SwitchSearchBar
             if cardItems.isEmpty {
                 Spacer()
-                ProgressView()
+                CardLoadingView()
                 Spacer()
             }else {
                 CardListView
@@ -33,6 +37,70 @@ struct ColorDemo: View {
         Text("世界上最高级的颜色")
             .font(.system(size: 17))
             .fontWeight(.bold)
+    }
+    
+    private var CardSearchBarView: some View {
+        TextField("搜索颜色值", text: $searchStr)
+            .padding(7)
+            .padding(.horizontal, 25)
+            .background(Color(.systemGray6))
+            .cornerRadius(8)
+            .overlay {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.gray)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 8)
+            }
+            .padding(.horizontal, 10)
+            .onChange(of: searchStr) { newValue in
+                if searchStr != "" {
+                    searchColor()
+                }else {
+                    getColors()
+                }
+            }
+    }
+    
+    private var SearchButtonView: some View {
+        Button {
+            withAnimation {
+                showSearchBar.toggle()
+            }
+        } label: {
+            Image(systemName: "magnifyingglass")
+                .font(.system(size: 20, weight: .bold))
+                .foregroundColor(.gray)
+        }
+    }
+    
+    private var CloseButtonView: some View {
+        Button {
+            withAnimation {
+                searchStr = ""
+                showSearchBar.toggle()
+            }
+        } label: {
+            Text("取消")
+                .foregroundColor(.gray)
+        }
+
+    }
+    
+    private var SwitchSearchBar: some View {
+        HStack(spacing: 20) {
+            if showSearchBar {
+                CardSearchBarView
+                CloseButtonView
+            }else {
+                CardTitleView
+                Spacer()
+                SearchButtonView
+            }
+        }
+        .padding(.top, 20)
+        .padding(.bottom, 10)
+        .padding(.horizontal)
+        .zIndex(1)
     }
     
     private var CardListView: some View {
@@ -60,11 +128,23 @@ struct ColorDemo: View {
         }
         .resume()
     }
+    
+    func searchColor() {
+        let query = searchStr.lowercased()
+        DispatchQueue.global(qos: .background).async {
+            let filter = cardItems.filter({$0.cardColorRBG.lowercased().contains(query)})
+            DispatchQueue.main.async {
+                withAnimation {
+                    self.cardItems = filter
+                }
+            }
+        }
+    }
 }
 
 struct ColorDemo_Previews: PreviewProvider {
     static var previews: some View {
-        ColorDemo()
+        TabberView()
     }
 }
 
@@ -117,5 +197,34 @@ struct ColorCard: View {
             }
 
         }
+    }
+}
+
+struct TabberView: View {
+    @State private var selectedTab = 0
+    var body: some View {
+        TabView(selection: $selectedTab) {
+            ColorDemo()
+                .tabItem {
+                    if self.selectedTab == 0 {
+                        Image(systemName: "house")
+                    }else {
+                        Image(systemName: "house.fill")
+                    }
+                    Text("首页")
+                }
+                .tag(0)
+            Text("我的")
+                .tabItem {
+                    if self.selectedTab == 1 {
+                        Image(systemName: "person")
+                    }else {
+                        Image(systemName: "person.fill")
+                    }
+                    Text("我的")
+                }
+                .tag(1)
+        }
+        .accentColor(Color.hex(0x409EFF))
     }
 }
