@@ -25,6 +25,7 @@
 		4A245DFD2A4C0E9300E4AA7E /* CardLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245DFC2A4C0E9300E4AA7E /* CardLoadingView.swift */; };
 		4A245E002A4C100300E4AA7E /* LogoViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245DFF2A4C100300E4AA7E /* LogoViewDemo.swift */; };
 		4A245E022A4C1F3C00E4AA7E /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245E012A4C1F3C00E4AA7E /* ImagePickerView.swift */; };
+		4A245E052A4C29FC00E4AA7E /* MatchedGeometryEffectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A245E042A4C29FC00E4AA7E /* MatchedGeometryEffectDemo.swift */; };
 		4A3AAC9C2A31CF77007764C0 /* ZHVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AAC9B2A31CF77007764C0 /* ZHVStackView.swift */; };
 		4A5F16392A47E3B200EEEB17 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F16382A47E3B200EEEB17 /* ColorExt.swift */; };
 		4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6070582A25901F00C5DF0E /* TestUIApp.swift */; };
@@ -208,6 +209,7 @@
 		4A245DFC2A4C0E9300E4AA7E /* CardLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLoadingView.swift; sourceTree = "<group>"; };
 		4A245DFF2A4C100300E4AA7E /* LogoViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewDemo.swift; sourceTree = "<group>"; };
 		4A245E012A4C1F3C00E4AA7E /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		4A245E042A4C29FC00E4AA7E /* MatchedGeometryEffectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectDemo.swift; sourceTree = "<group>"; };
 		4A3AAC9B2A31CF77007764C0 /* ZHVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHVStackView.swift; sourceTree = "<group>"; };
 		4A5F16382A47E3B200EEEB17 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		4A6070552A25901F00C5DF0E /* TestUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,9 +453,18 @@
 			path = LogoViewDemo;
 			sourceTree = "<group>";
 		};
+		4A245E032A4C29DB00E4AA7E /* MatchedGeometryEffectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4A245E042A4C29FC00E4AA7E /* MatchedGeometryEffectDemo.swift */,
+			);
+			path = MatchedGeometryEffectDemo;
+			sourceTree = "<group>";
+		};
 		4A3AAC952A31C02B007764C0 /* OtherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4A245E032A4C29DB00E4AA7E /* MatchedGeometryEffectDemo */,
 				4A245DFE2A4C0FF500E4AA7E /* LogoViewDemo */,
 				E28212152A49D70700A01A70 /* ColorDemo */,
 				E28212102A488B8100A01A70 /* ScrollViewReaderDemo */,
@@ -1202,6 +1213,7 @@
 				E275EBEA2A389AD4005A9E9C /* GeneralViewDemo.swift in Sources */,
 				E275EBE12A3763A0005A9E9C /* ListCell.swift in Sources */,
 				4A3AAC9C2A31CF77007764C0 /* ZHVStackView.swift in Sources */,
+				4A245E052A4C29FC00E4AA7E /* MatchedGeometryEffectDemo.swift in Sources */,
 				4A5F16392A47E3B200EEEB17 /* ColorExt.swift in Sources */,
 				4A6070592A25901F00C5DF0E /* TestUIApp.swift in Sources */,
 				4A14783D2A4153A400B35073 /* RegisterDemo.swift in Sources */,
